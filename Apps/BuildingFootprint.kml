@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:ns2="http://www.google.com/kml/ext/2.2" xmlns:ns3="http://www.w3.org/2005/Atom" xmlns:ns4="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0">
+    <Document>
+        <Schema name="BuildingFootprint_1" id="BuildingFootprint_1">
+            <SimpleField type="string" name="id"/>
+            <SimpleField type="string" name="TYPE"/>
+            <SimpleField type="string" name="HEIGHT"/>
+        </Schema>
+        <Folder>
+            <name>BuildingFootprint</name>
+            <Placemark id="BuildingFootprint.1">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.13017307706781,32.79688465775691 75.13022490706943,32.7971156392859 75.1302294140261,32.797117892764234 75.13023842793943,32.797117892764234 75.13038828424848,32.79703564080513 75.13039279120514,32.79701986645681 75.13029814511522,32.796859869495265 75.13028687772355,32.79685310906027 75.13017195032864,32.79687113688692 75.13017307706781,32.79688465775691</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.2">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.13095052709221,32.797311691900745 75.13111503101042,32.79739056364235 75.13112179144541,32.797388310164024 75.13119615623036,32.79728126994327 75.13119390275202,32.79727112929078 75.13119052253452,32.797264368855785 75.13102939883382,32.79718211689668 75.13095052709221,32.797311691900745</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.3">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.13239726018111,32.796762969926995 75.13248401909686,32.7968486021036 75.13249866670603,32.7968486021036 75.13255049670765,32.79682268710278 75.13258655236096,32.79678325123198 75.1326676775809,32.79663677514043 75.13260796040511,32.79661536709628 75.13261246736177,32.796593959052124 75.13254824322932,32.79656691731215 75.13245810409606,32.79670099927288 75.13239726018111,32.796762969926995</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.4">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.13189022755648,32.796013688381734 75.13196121212393,32.79603284294755 75.1319623388631,32.796055377730866 75.13206937908384,32.796067771861686 75.13209529408466,32.7959618583801 75.13197698647225,32.795940450335955 75.13197585973309,32.79594946424928 75.13190374842648,32.795940450335955 75.13189022755648,32.796013688381734</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.5">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.13169868189831,32.795273984119376 75.13179276461865,32.795342715208484 75.13190825538315,32.79523849183565 75.13188177701275,32.795188492785165 75.13189248103484,32.795166521371435 75.13181698951072,32.79512595876147 75.13180177853198,32.79511919832647 75.13169868189831,32.795273984119376</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.6">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.13231557159156,32.795476092957244 75.13244514659563,32.79547721969641 75.13246655463978,32.79538144686732 75.13254317290306,32.795336377300686 75.13260739703551,32.795201168600784 75.13251613116307,32.795166239686644 75.13239895028984,32.79530482860404 75.13229078332992,32.79538144686732 75.13231557159156,32.795476092957244</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.7">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.1325747215997,32.795469332522245 75.13265697355881,32.795539190350524 75.13276739399706,32.795470459261416 75.13278992878037,32.7954513046956 75.13286091334781,32.7953622923015 75.13288570160947,32.795364545779826 75.13290598291445,32.79542764317311 75.13295217922027,32.79542764317311 75.13295781291609,32.79524285794992 75.1329048561753,32.79522821034077 75.13296006639443,32.795148211859996 75.13291950378446,32.795134690990004 75.13292513748029,32.79511666316335 75.13281021008538,32.79508849468421 75.13280006943288,32.79510877598919 75.13275725334458,32.795099762075864 75.13271331051712,32.795192154687456 75.13267950834214,32.79519328142663 75.13262767834051,32.7953127157782 75.13266035377632,32.79532623664819 75.1325747215997,32.795469332522245</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.8">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.13408905903856,32.79554707752468 75.1342062399118,32.79553806361135 75.13420849339013,32.79547947317473 75.13410257990856,32.79547947317473 75.13408004512523,32.795481726653065 75.13408905903856,32.79554707752468</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.9">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.13291725030612,32.795035537943406 75.13296006639443,32.79506483316172 75.13299161509107,32.79501751011675 75.13294654552443,32.79500173576843 75.1329442920461,32.79499497533344 75.13291725030612,32.795035537943406</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.10">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.13451496644323,32.79438202922724 75.1346546820998,32.79437639553141 75.13465580883896,32.794289636615645 75.13451271296489,32.794293016833144 75.13451496644323,32.79438202922724</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.11">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.1351429826869,32.79749267437943 75.13517678486187,32.79748929416193 75.1352721351627,32.797482815411534 75.13528340255435,32.79754140584815 75.13534199299097,32.797543659326486 75.13532396516432,32.79741521106158 75.13529692342433,32.79725521410004 75.1351527008111,32.79724845366504 75.1351429826869,32.79749267437943</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.12">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.1334197759741,32.7971312727918 75.13356174510899,32.797151554096786 75.13356174510899,32.79704338713687 75.13341526901745,32.79703437322354 75.1334197759741,32.7971312727918</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.13">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.13360230771896,32.79689015061032 75.13360681467563,32.79690367148031 75.13372850250553,32.79690592495864 75.13373976989719,32.79685409495701 75.13372174207053,32.79667832364715 75.13358427989232,32.79667832364715 75.13360230771896,32.79689015061032</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.14">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.13372850250553,32.797020852353555 75.13380399402965,32.7969960640919 75.13376793837634,32.79690141800197 75.1336901933739,32.79692620626362 75.13372850250553,32.797020852353555</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.15">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.13342540966994,32.79692958648112 75.13349977445488,32.796928459741956 75.13349977445488,32.79685522169618 75.13349301401988,32.796656915602995 75.13337019945081,32.79666930973382 75.13338935401663,32.796877756479496 75.13342766314827,32.796883390175324 75.13342540966994,32.79692958648112</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.16">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.13305809270189,32.79622875471999 75.13312231683433,32.796210726893335 75.13309865531185,32.7961228412384 75.13313921792182,32.79611720754257 75.13312231683433,32.79599551971267 75.13305809270189,32.79597749188601 75.13305696596272,32.79593467579772 75.13296457335112,32.795917774710226 75.13297246052528,32.79603495558347 75.13301640335276,32.796041716018465 75.13301527661358,32.79611946102091 75.13300400922192,32.79613185515173 75.13305809270189,32.79622875471999</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.17">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.13477298971226,32.793751055294386 75.13503777341623,32.79387161638513 75.13508960341785,32.79377471681687 75.13494876102213,32.7936913381186 75.13496904232711,32.79365302898697 75.1348372138447,32.7936023257245 75.1348045384089,32.79362936746448 75.13478200362559,32.79362148029032 75.13475608862477,32.79365978942196 75.13479890471308,32.79368119746611 75.13477298971226,32.793751055294386</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.18">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.13168459765879,32.79471779749866 75.13173079396459,32.79471892423783 75.13174318809541,32.79470765684617 75.13175896244373,32.79468624880202 75.13176121592207,32.79466934771453 75.13174769505207,32.794647939670384 75.13172966722541,32.79464117923539 75.13171276613794,32.79464117923539 75.13169135809379,32.79464343271372 75.13168234418046,32.79465019314872 75.13167220352797,32.794664840757875 75.1316643163538,32.79467836162786 75.13166656983213,32.79470540336784 75.13168459765879,32.79471779749866</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.19">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.13117418481669,32.794370761835594 75.13118207199084,32.794370761835594 75.13128798547243,32.79435611422644 75.13129249242908,32.79438878966225 75.13138601177985,32.79437639553143 75.13137249090987,32.794336959660626 75.13144910917313,32.79431893183397 75.13143108134648,32.79419386378657 75.13117305807751,32.794253580962355 75.1311967196,32.79430541096398 75.13115841046836,32.79432231205147 75.13117418481669,32.794370761835594</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.20">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.13164854200548,32.794304284224815 75.13172516026876,32.79425921465818 75.13169248483295,32.79422766596154 75.1317172730946,32.79420625791739 75.13168685113712,32.79417132900325 75.1316575559188,32.79418823009074 75.131624880483,32.794154427915764 75.13155502265472,32.79420963813489 75.13164854200548,32.794304284224815</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.21">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.13154826221971,32.79413076639328 75.13162262700466,32.79411386530579 75.13170037200709,32.79412963965411 75.13172065331209,32.79412400595828 75.13172065331209,32.794096964218305 75.13175670896538,32.794096964218305 75.13177135657455,32.79408907704414 75.13187276309947,32.79414879421993 75.13188065027363,32.794144287263265 75.13191332570943,32.794096964218305 75.13195501505857,32.794096964218305 75.13206656223598,32.79402823312919 75.132046280931,32.79399555769338 75.13210599810678,32.793956121822575 75.13208120984514,32.79390316508179 75.1320992376718,32.79389189769012 75.13204515419183,32.793804012035196 75.1319933241902,32.793823166601015 75.13195163484107,32.79380288529603 75.13190881875276,32.79383781421017 75.13185135505532,32.793752182033565 75.13179163787953,32.79378260399104 75.1317792437487,32.79376344942523 75.13180853896701,32.793743168120244 75.13180065179286,32.79372626703275 75.13178713092286,32.793724013554424 75.13173192070374,32.793765702903556 75.13168572439794,32.79377020986022 75.13165530244046,32.79377697029521 75.1316079793955,32.79380288529603 75.13157417722053,32.793825420079344 75.13154600874138,32.79384232116683 75.13151107982723,32.793854715297655 75.13149981243558,32.793873869863475 75.13148741830476,32.79389865812512 75.13145812308645,32.79392682660426 75.13144234873812,32.793938093995926 75.13144234873812,32.793956121822575 75.13145924982561,32.79401583899836 75.13151107982723,32.79400682508504 75.13154826221971,32.79413076639328</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.22">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.13501692874169,32.797096343877655 75.13504622396,32.797085076486 75.13502932287251,32.79704845746311 75.13500059102378,32.79705972485477 75.13501692874169,32.797096343877655</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.23">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.13877404049005,32.79770985335344 75.13883713788333,32.79766253030847 75.13879206831669,32.797606193350184 75.13874023831507,32.797637742046824 75.13873573135841,32.79764675596015 75.13877404049005,32.79770985335344</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.24">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.13906135897732,32.79762422117684 75.13911544245727,32.7975960526977 75.13913234354476,32.79760619335019 75.1391605120239,32.797588165523536 75.13913009006643,32.79754196921774 75.1391537515889,32.79752844834775 75.13912670984892,32.79748450552028 75.13909741463061,32.79749802639027 75.13907600658646,32.79747549160695 75.13898812093153,32.79752619486941 75.13906135897732,32.79762422117684</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.25">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.13944219681535,32.797887314772055 75.13976557095594,32.79810026847439 75.13978923247842,32.798098014996064 75.13983430204506,32.7980473117336 75.13986697748086,32.79799435499281 75.13984894965421,32.797968439992 75.13980838704424,32.797989848036146 75.13967993877934,32.797904215859546 75.1397205013893,32.79785125911875 75.13954360334027,32.79772619107135 75.13944219681535,32.797887314772055</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.26">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.13977909182593,32.79825012478344 75.1399942990066,32.79826927934926 75.13998190487578,32.798139704345196 75.1397768383476,32.798129563692704 75.13977909182593,32.79825012478344</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.27">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.13900727549735,32.798199421520984 75.13906023223815,32.79826589913176 75.13911882267477,32.79822646326096 75.13907600658646,32.798164492606844 75.13900727549735,32.798199421520984</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.28">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.13931600202878,32.7982681526101 75.13935881811709,32.79823547717429 75.13941064811871,32.79827491304509 75.13947937920783,32.798199421520984 75.13930924159379,32.79802928390695 75.13919093398138,32.79813181717103 75.13931600202878,32.7982681526101</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.29">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.14019485857811,32.79836955913502 75.14025570249306,32.79835491152586 75.14024218162308,32.79829406761091 75.14018133770813,32.79831322217673 75.14019485857811,32.79836955913502</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.30">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.13986247052419,32.79892222469585 75.13988275182918,32.798956026870826 75.13986472400252,32.79897856165414 75.1398850053075,32.79899546274162 75.13991430052582,32.798977434914974 75.13995937009246,32.79901574404661 75.13991993422165,32.79906419383074 75.13995260965746,32.79910024948405 75.14006528357403,32.798984195349966 75.14008218466152,32.79901349056828 75.14013063444565,32.79898532208913 75.14009908574901,32.79893236534834 75.14018359118644,32.79890983056502 75.14020274575226,32.798904196869195 75.14025682923223,32.799024757959934 75.14018021096895,32.79906757404824 75.14020612596977,32.799194613889185 75.14023091423141,32.79919799410668 75.14049907815287,32.799105601495086 75.1404754166304,32.798954618446864 75.1405148525012,32.79892081627189 75.14047767010872,32.79882729692113 75.14041344597628,32.79884081779112 75.14037851706213,32.79872842555933 75.14031992662551,32.798630399251905 75.14018922488228,32.7984625151162 75.14020612596977,32.798429839680395 75.14018133770811,32.79841406533207 75.14005063596488,32.798544767075306 75.14020049227393,32.798668708383545 75.13986247052419,32.79892222469585</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.31">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.14092160534007,32.798607301099 75.14104667338746,32.79858138609818 75.1410387862133,32.798520542183226 75.14116272752155,32.798508148052406 75.14112216491158,32.798402234570815 75.14102751882164,32.79843040304996 75.14103089903915,32.79838195326583 75.14108723599743,32.798367305656676 75.14102413860415,32.79823097021762 75.14088216946926,32.798271532827584 75.14092611229673,32.79839660087499 75.14093399947089,32.798494627182414 75.14089118338259,32.79850927479157 75.14092160534007,32.798607301099</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.32">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.14180384210688,32.79824364603323 75.14188834754432,32.798240265815735 75.14188384058765,32.798207590379924 75.14191426254514,32.798205336901596 75.14191426254514,32.79822449146741 75.14198186689508,32.798226744945744 75.1419976412434,32.79833603864483 75.14206073863669,32.79833941886233 75.1420641188542,32.79842955799559 75.14232552234066,32.798430684734754 75.14232214212316,32.79833603864483 75.14239087321228,32.798338292123155 75.14239763364726,32.79825378668572 75.14243481603974,32.79825153320739 75.14243368930057,32.798156887117464 75.14237960582061,32.79815801385663 75.14231087473149,32.79816590103079 75.14231312820984,32.798205336901596 75.14211144189915,32.79818730907494 75.14211369537749,32.79810505711583 75.14203257015754,32.79809491646334 75.14203031667921,32.79802505863506 75.14193116363262,32.79803407254839 75.14193454385013,32.79806900146253 75.14189398124016,32.798071254940865 75.14190299515347,32.79809716994168 75.14179482819357,32.79810167689834 75.14180384210688,32.79824364603323</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.33">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.14191088232764,32.79892194301104 75.14220946820657,32.79892532322853 75.14219482059741,32.79881039583362 75.14213059646497,32.798812649311955 75.1421362301608,32.79873377757035 75.1422218623374,32.798729270613684 75.14222636929406,32.798751805397 75.14231200147066,32.79874729844034 75.14230298755733,32.79856476669548 75.14211707559498,32.798573780608805 75.14211482211664,32.79860645604461 75.14203933059254,32.798607582783774 75.14199651450423,32.79860645604461 75.14202242950505,32.79874617170117 75.141872573196,32.798758565831996 75.14187482667433,32.7987912412678 75.14191989624096,32.798796874963635 75.14191989624096,32.798863352574415 75.14189848819682,32.79886560605274 75.14191088232764,32.79892194301104</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.34">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.1417441249311,32.79774562732194 75.14196947276425,32.797674642754494 75.14193905080677,32.79761154536121 75.14172384362611,32.79767689623282 75.1417441249311,32.79774562732194</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.35">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.14090470425256,32.79769267058115 75.14098695621166,32.79765436144951 75.14100160382083,32.79767689623282 75.14105343382245,32.797653234710346 75.14104667338745,32.797637460362026 75.14110075686742,32.797604784926214 75.14101850490832,32.79748760405297 75.14083484642428,32.79757774318623 75.14090470425256,32.79769267058115</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.36">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.14055203489364,32.797891821728705 75.14067597620189,32.79794365173033 75.14068837033271,32.797954919121985 75.14068273663688,32.79797632716614 75.14073118642101,32.797993228253624 75.14078865011847,32.79785801955373 75.14074470729099,32.797841118466245 75.14059710446028,32.797780274551286 75.14055203489364,32.797891821728705</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.37">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.14085850794677,32.7970219790927 75.14089231012174,32.79704564061518 75.14095202729753,32.79697803626523 75.14092047860089,32.79695662822108 75.14085850794677,32.7970219790927</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.38">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.14085174751177,32.79716620170592 75.14089794381758,32.797205637576724 75.14097681555918,32.79713465300928 75.14111878469407,32.79721803170755 75.14119540295735,32.79711549844346 75.141206670349,32.79712789257429 75.14122244469732,32.79711324496513 75.14135652665806,32.79722704562088 75.14163032427535,32.79698930365689 75.14155032579457,32.796896911045295 75.14139821600719,32.797011838440206 75.14135314644057,32.796982543221894 75.14132385122225,32.79701409191854 75.14113005208573,32.796877756479475 75.14085174751177,32.79716620170592</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.39">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.14182975710771,32.796945360829426 75.1420641188542,32.796983669961065 75.14210580820333,32.79683156017368 75.14202580972255,32.79681691256452 75.14204045733172,32.7967650825629 75.14188834754434,32.796741421040416 75.14182975710771,32.796945360829426</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.40">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.14206186537587,32.79668198554942 75.14214411733496,32.79668198554942 75.14214524407413,32.796625648591125 75.14206975255003,32.796629028808624 75.14206186537587,32.79668198554942</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.41">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.14208552689834,32.796989585341684 75.14208440015918,32.79700310621167 75.14214524407413,32.79700986664667 75.14215989168329,32.79688930555593 75.14211256863832,32.796884798599265 75.14208552689834,32.796989585341684</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.42">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.14181623623774,32.79749098427047 75.14188384058768,32.79753042014127 75.14194468450265,32.79743690079051 75.1418635592827,32.79740197187637 75.14181623623774,32.79749098427047</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.43">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.14270636017872,32.797448168182164 75.14281340039948,32.79751689927128 75.14286072344444,32.797451548399664 75.14282354105197,32.79742112644219 75.14293170801189,32.79732084665643 75.1428618501836,32.797263382958974 75.14274241583203,32.79739070448471 75.14270636017872,32.797448168182164</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.44">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.14313001410507,32.79722394708817 75.14323930780415,32.79730619904728 75.14326522280497,32.797257749263146 75.14329564476245,32.79727127013314 75.14332606671992,32.79723408774066 75.14328099715328,32.797207046000686 75.14325057519581,32.79723746795816 75.1431717034542,32.797174370564875 75.14317508367171,32.79717549730404 75.14313001410507,32.79722394708817</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.45">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.14330916563243,32.797343381439745 75.14345282487609,32.797439154268844 75.1435249361827,32.79737380339722 75.14359986433723,32.79741943633344 75.14365113096927,32.79738394404971 75.14363761009928,32.79736647959265 75.14365620129551,32.797289297959786 75.14360437129389,32.797254369045646 75.14356662553183,32.797257749263146 75.14346296552858,32.7971833844782 75.14337620661281,32.797244791762736 75.1433536718295,32.797232397631916 75.14333846085076,32.79724253828441 75.14331367258912,32.79727014339397 75.1433429678074,32.79730169209061 75.14330916563243,32.797343381439745</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.46">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.14289903257608,32.796865925718244 75.14303536801515,32.7969166289807 75.1430894514951,32.796821982890776 75.14303649475431,32.796799448107464 75.14304550866764,32.79676451919332 75.14296325670854,32.79673973093167 75.14289903257608,32.796865925718244</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.47">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.1434455010715,32.79676001223666 75.14379479021291,32.79650987614185 75.14371141151463,32.79644114505273 75.14343986737568,32.796620296580095 75.14347704976815,32.796674380060054 75.14340831867904,32.79671381593086 75.1434455010715,32.79676001223666</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.48">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.1439007036945,32.796374949126744 75.14397394174027,32.79632987956011 75.14393788608696,32.796266782166825 75.14386464804119,32.796308471515964 75.1439007036945,32.796374949126744</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.49">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.14363479325137,32.79637044217008 75.14378464956042,32.79629382390681 75.1437722554296,32.79627917629765 75.14385788760619,32.79623297999185 75.14381957847456,32.796196924338545 75.14375084738545,32.79622734629602 75.14373507303712,32.79620255803437 75.14372831260212,32.79619579759938 75.14362465259887,32.796251007818505 75.14364718738219,32.79629495064597 75.14358521672807,32.79632537260345 75.14361338520722,32.79637382238758 75.14363479325137,32.79637044217008</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+            <Placemark id="BuildingFootprint.50">
+                <ExtendedData>
+                    <SchemaData schemaUrl="#BuildingFootprint_1">
+                        <SimpleData name="TYPE"></SimpleData>
+                    </SchemaData>
+                </ExtendedData>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <tessellate>1</tessellate>
+                            <coordinates>75.14545335026497,32.79743295720343 75.14551419417992,32.79740591546346 75.14548715243994,32.79730000198187 75.14541391439417,32.79732929720018 75.14545335026497,32.79743295720343</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+        </Folder>
+    </Document>
+</kml>

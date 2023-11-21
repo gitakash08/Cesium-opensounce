@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+  <title>POC</title>
+  <link rel="stylesheet" href="../Apps/libraries/bootstrap.min.css">
+  <link href="../Apps/libraries/tabulator.min.css" rel="stylesheet">
+  <style>
+    @import url(../Build/CesiumUnminified/Widgets/widgets.css);
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .card-container {
+      border: none;
+      /* Remove default card border */
+      /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  */
+    }
+
+    .card-container h5 {
+      background-color: #FFFFFF;
+      padding: 10px;
+      margin: 0;
+    }
+
+    #cesiumContainer {
+      height: 100vh;
+    }
+
+    .card-body {
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      padding: 0;
+      /* height: 100vh; */
+    }
+
+    .card-title {
+      text-align: center;
+    }
+
+    /* .selection-rectangle {
+      position: absolute;
+      border: 2px solid #df12ab;
+      background: rgba(0, 153, 255, 0.1);
+      pointer-events: none;
+    } */
+    #selectionRectangle {
+      position: absolute;
+      border: 3px dashed rgb(71, 7, 190);
+      pointer-events: none;
+    }
+
+    .tab {
+      overflow: hidden;
+      background-color: #FFFFFF;
+      /* border-top: 1px solid #ccc;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      gap: 2px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      font-size: 12px;
+      cursor: pointer;
+      padding: 5px 5px;
+      min-width: fit-content;
+      transition: 0.3s;
+      border: 1px solid #ccc;
+      margin: 0;
+      /* Remove margin between tab buttons */
+    }
+
+    .tab button:first-child {
+      border-left: 1px solid #ccc;
+    }
+
+    .tab button:hover {
+      background-color: #ccc;
+    }
+
+    /* Highlight the active tab */
+    .tab button.active {
+      background-color: #024d02;
+      color: #fff;
+      min-width: fit-content;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      border-bottom: 1px solid #024d02;
+    }
+
+    #customInfoBox {
+      position: absolute;
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      display: block;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      color: #333333;
+      width: 258px;
+      margin: 109px 0px 0px 37px;
+      height: 26vh;
+      overflow-y: auto;
+      top: 17em;
+    }
+
+
+    .hr-text {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .hr-text hr {
+      display: inline-block;
+      width: 10%;
+      /* Adjust the width as needed */
+      border: none;
+      height: 3px;
+      background-color: #0f0f0f;
+      /* Adjust the color as needed */
+      vertical-align: middle;
+    }
+
+    .mapAnalysisBtn {
+      width: 9em;
+      background-color: #024d02;
+      color: white;
+      height: 30px;
+      font-size: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .col {
+      flex: 0.2 0%;
+    }
+
+    /* #snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+} */
+
+    .loader-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      display: none;
+      /* Initially hidden */
+    }
+
+    .loader {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #3498db;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div
+        style="position: absolute; z-index: 5; height: 50px; width: 100%; display: flex; justify-content: center; align-items: center; background-color: #FFFFFF;box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);">
+        <!-- <div class="col-1" style="display: flex; justify-content: center; align-items: center;">
+          <img height="50px" src="/Apps/assets/Wardec.png">
+        </div> -->
+        <div class="col-12" style="display: flex; justify-content: start; align-items: center;gap: 10px;">
+          <img height="45px" src="/Apps/assets/Wardec.png">
+          <h2>Automated IPB Application (Q3)</h2>
+        </div>
+        <!-- <div class="col-2" style="display: flex; justify-content: end; align-items: center;">
+          <img height="50px" src="/Apps/assets/Army_Logo.png">
+        </div> -->
+      </div>
+      <div class="col-lg-3 col-md-5 col-sm-6 p-0" id="SidePanel">
+        <div class="card card-container" style="margin-top: 50px;">
+          <h5 class="card-title">Feature Panel</h5>
+          <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'tab1')">Uplaod Files</button>
+            <button class="tablinks" onclick="openTab(event, 'tab2')">Map Analysis</button>
+            <button class="tablinks" onclick="openTab(event, 'tab3')">Route</button>
+          </div>
+          <div id="otherPanel" class="card-body">
+            <div id="tab2" class="tabcontent"
+              style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px;justify-content: center; align-items: center;">
+              <!-- <button class="btn btn mapAnalysisBtn" onclick="addImageLayerOnMap()">Add Image Layer</button>
+              <button class="btn btn mapAnalysisBtn" onclick="filterDataClick()">Image Layer Filter</button>
+              <button class="btn btn mapAnalysisBtn" onclick="addVectorLayer()">Add Vector Layer</button>
+              <button class="btn btn mapAnalysisBtn" onclick="filterVectorLayer()">Vector Layer Filter</button> -->
+              <div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="BUILTUP" onchange="handleCheckboxChange(this)"
+                    id="built_up_areas">
+                  <label class="form-check-label" for="built_up_areas">
+                    Built Up areas
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value='Road' onchange="handleCheckboxChange(this)"
+                    id="roads">
+                  <label class="form-check-label" for="roads">
+                    Roads
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Rail Track"
+                    onchange="handleCheckboxChange(this)" id="tracks">
+                  <label class="form-check-label" for="tracks">
+                    Tracks
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Water Body"
+                    onchange="handleCheckboxChange(this)" id="water_bodies">
+                  <label class="form-check-label" for="water_bodies">
+                    Water bodies
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="height" onchange="handleCheckboxChange(this)"
+                    id="heigh" style="position: relative;">
+                  <label class="form-check-label" for="height">
+                    Height >=
+                  </label>
+                  <input type="text" id="heightValue" style="width: 50px;">
+                </div>
+              </div>
+              <button class="btn btn mapAnalysisBtn" onclick="StartDrawing()">Selection Tool</button>
+              <button class="btn btn mapAnalysisBtn" onclick="ResetFilter()">Clear</button>
+
+            </div>
+            <div style="display: none;" id="customInfoBox"></div>
+            <!-- <div id="example-table" style="left: 5px; top: 29px; width: 432px;"></div> -->
+
+            <!-- <div id="CartesianDetails" style="height: 100%;"></div> -->
+
+            <div id="tab1" class="tabcontent" style="margin-top: 20px;">
+              <div
+                style="display: flex; flex-direction: column; width: 100%; gap: 10px; justify-content: center; align-items: center;">
+                <div style="margin-left: 100px;font-size: 13px;">
+                  <label for="brorseFile">Browse .Shp/.Tif/.Dem</label>
+                  <input type="file" id="browseFile" name="myfile" accept=".tif,.shp">
+                  <div style="margin-top: 20px;">
+                    <button type="button" class="btn btn mapAnalysisBtn" id="addLayer">View On Map</button>
+                  </div>
+                </div>
+                <div style="display: none;">
+
+
+                  <hr style="border: 1px solid black; width: 90%;" />
+
+                  <div
+                    style="font-size: 13px; width: 90%; justify-content: center; display: flex; font-style: oblique;">
+                    OR Select for uplaod Tiff/Vector file on Server</div>
+                  <div>
+                    <select aria-controls="contact-tab-pane" id="myDropdown"
+                      style="height: 23px;width: 130px; font-size: 10px; border-radius: 8px; padding: 0px 5px;">
+                      <option value="select">Select Tiff Image</option>
+                    </select>
+                  </div>
+                  <div>
+                    <select aria-controls="contact-tab-pane" id="myDropdown2"
+                      style="height: 23px;width: 130px; font-size: 10px; border-radius: 8px; padding: 0px 5px;">
+                      <option value="select">Select Shape File</option>
+                    </select>
+                  </div>
+                  <div
+                    style="margin-top: 10px; font-size: 13px; width: 90%; justify-content: center; padding-top: 5px; display: flex; border-top: 1px solid grey;">
+                    View Tiff/Vector file on Map
+                  </div>
+                  <div>
+                    <select aria-controls="contact-tab-pane" id="tiffImage"
+                      style="height: 23px;width: 130px; font-size: 10px; border-radius: 8px; padding: 0px 5px;">
+                      <option value="select">Select Layer</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <button type="button" class="btn btn mapAnalysisBtn" id="tiffdata">View on Map</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div id="tab3" class="tabcontent"
+              style="display: flex; flex-direction: column; width: 100%; gap: 10px; justify-content: center; align-items: center;margin-top: 15px;">
+              <!-- Content for Tab 3 -->
+              <div style="margin-left: 7px;">
+                <div class="source-coords">
+                  <div style="margin-bottom: 10px;">
+                    <h5 style="padding: 10px 10px 3px 0px;">Starting Points</h5>
+                    <div style="display: flex;flex-direction: column;">
+                      <input id="source" type="text" value="32.784257,75.135157"
+                        style="width: 200px; height: 26px;font-size: 13px;">
+                      <span style="font-size: 12px;color: rgb(162, 32, 32);">Starting points or click on map</span>
+                    </div>
+                    <!-- <div style="display: flex;gap: 17px;margin-bottom: 6px;">
+                      <label>Lat:</label>
+                      <input id="sLat" type="text" value="32.784257" style="width: 150px; height: 26px;">
+                    </div>
+                    <div style="display: flex;gap: 5px;margin-bottom: 6px;">
+                      <label>Long:</label>
+                      <input id="sLong" type="text" value="75.135157" style="width: 150px; height: 26px;">
+                    </div> -->
+                  </div>
+                </div>
+                <div class="dest-coords">
+                  <div>
+                    <h5 style="padding: 10px 10px 3px 0px;">Destination</h5>
+                    <div style="display: flex;flex-direction: column;">
+                      <input id="destination" type="text" value="32.779794,75.153594"
+                        style="width: 200px; height: 26px;font-size: 13px;">
+                      <span style="font-size: 12px;color: rgb(162, 32, 32);">Destination points or click on map</span>
+                    </div>
+                    <!-- <div style="display: flex;gap: 17px;margin-bottom: 6px;">
+                      <label>Lat:</label>
+                      <input id="dLat" type="text" value="32.779794" style="width: 150px; height: 26px;">
+                    </div>
+                    <div style="display: flex;gap: 5px;margin-bottom: 6px;">
+                      <label>Long:</label>
+                      <input id="dLong" type="text" value="75.153594" style="width: 150px; height: 26px;">
+                    </div> -->
+                  </div>
+                </div>
+                <div style="display: flex;justify-content: center;margin-top: 15px;margin-bottom: 10px;">
+                  <button type="button" aria-controls="contact-tab-pane" class="btn btn mapAnalysisBtn"
+                    id="routeData">Create Route
+                  </button>
+                </div>
+                <div class="route-info" style="margin-top: 25px;">
+                  <div style="font-weight: 500;">
+                    <span>Distance : </span><span id="Distance"></span>
+                  </div>
+                  <div style="font-weight: 500;">
+                    <span>Time : </span><span id="Time"></span>
+                  </div>
+                  <div style="font-weight: 500;">
+                    <span>Speed : </span><span id="Speed"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <footer
+          style="background-color: #333; color: #fff; padding: 5px; text-align: center; box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.2); position: absolute; bottom: 0px; width: 100%;">
+          <p
+            style="margin: 0; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; 
+          font-weight: 700; color: #ffd700;  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);font-family: 'Arial', sans-serif;">
+            Powered by ML Infomap Pvt. Ltd.</p>
+        </footer>
+      </div>
+      <div class="collapseButton" onclick="collapseSidePanel()"
+        style="cursor: pointer; position: absolute; z-index: 5; top: 60px; display: flex; background-color: #024d02; left: 23.9%; justify-content: center; align-items: center; width: 25px; height: 25px; border-radius: 50px;">
+        <svg style="fill: #FFFFFF;" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+          <path
+            d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+        </svg>
+        <svg style="fill: #FFFFFF;" xmlns="http://www.w3.org/2000/svg" height="0.8em" viewBox="0 0 320 512">
+          <path
+            d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+        </svg>
+      </div>
+      <div class="expandButton" onclick="expandSidePanel()"
+        style="cursor: pointer; position: absolute; z-index: 5; top: 60px; display: none; background-color: #FFFFFF; left: 10px; justify-content: center; align-items: center; width: 40px; height: 30px; border-radius: 50px;">
+        <svg style="fill: #024d02" xmlns="http://www.w3.org/2000/svg" height="0.8em" viewBox="0 0 320 512">
+          <path
+            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+        </svg>
+        <svg style="fill: #024d02" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+          <path
+            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+        </svg>
+      </div>
+      <div id="map1" class="col-lg-9 col-md-7 col-sm-6 p-0">
+        <div class="card card-container">
+          <div id="example-table"
+            style="top: 3.7em;right: 0.2em; z-index: 99; width: 432px;position: absolute;cursor: move;">
+          </div>
+          <div class="card"
+            style="margin-top: 50px; position: absolute; z-index: 99; bottom: 0; background: transparent; color: white;">
+            <div class="card-body">
+              <div id="CartesianDetails" style="height: 100%;"></div>
+            </div>
+          </div>
+          <div id="cesiumContainer" class="card-body"></div>
+          <div style="display: none;" id="selectionRectangle"></div>
+        </div>
+      </div>
+      <div class="loader-wrapper" id="loader">
+        <div class="loader"></div>
+      </div>
+    </div>
+  </div>
+  <script src="../Apps/libraries/turf.min.js"></script>
+  <script src="../Build/CesiumUnminified/Cesium.js"></script>
+  <script src="../Apps/libraries/jquery-3.6.4.min.js"></script>
+  <script src="../Apps/libraries/popper.min.js"></script>
+  <script src="../Apps/libraries/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../Apps/libraries/tabulator.min.js"></script>
+  <script src="./backend.js"></script>
+  <script src="./backend2.js"></script>
+  <script src="./route.js"></script>
+  <script src="./createRoute.js"></script>
+</body>
+
+</html>
